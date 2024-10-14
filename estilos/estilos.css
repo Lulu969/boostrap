@@ -1,0 +1,146 @@
+* {
+    background-color: #7164b4;
+}
+
+.contenedor {
+    padding: 5px;
+    background-color: #8f9fe4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "contenido ads"
+        "footer footer";
+}
+
+.contenedor .header {
+    grid-area: header;
+    background-color: #7164b4;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor .nav {
+    grid-area: nav;
+    background-color: #7164b4;
+}
+
+button.btn.btn-outline-success[type=submit] {
+    background-color: #bacbfe; 
+    border-radius: 5px;
+    color: black; 
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button.btn.btn-outline-success[type=submit]:hover {
+    background-color: #bca5da; 
+}
+
+
+.navbar {
+    background-color: #8f9fe4;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 15px;
+}
+
+.contenedor .contenido {
+    padding: 10px;
+    grid-area: contenido;
+    background-color: #bacbfe;
+}
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-next-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-indicators {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+.contenedor .ads {
+    padding: 10px;
+    grid-area: ads;
+    background-color: #bca5da;
+}
+.cosito1 {
+    display: flex;              /* Utilizar flexbox para organizar las tarjetas en una fila */
+    flex-wrap: nowrap;         /* No permitir que las tarjetas se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
+    padding: 20px;
+    background-color: #bacbfe;
+}
+
+.card {
+    padding: 2px;
+    background-color: rgb(53, 53, 53) !important; 
+    color: white !important; 
+    border: 2px solid black; 
+}
+.card-img-top {
+    margin-bottom: 5px; 
+}
+
+.card-body {
+    background-color: #8f9fe4;
+    border-radius: 10px;
+}
+
+.card-title {
+    background-color: #8f9fe4;
+}
+
+.card-text {
+    background-color: #8f9fe4;
+}
+.btn-primary {
+    background-color: rgb(53, 53, 53) !important; 
+    color: white !important; 
+    border: none !important; 
+}
+
+.btn-primary:hover {
+    background-color: #333 !important; 
+}
+
+.accordion{
+    margin-bottom: 5px; 
+}
+.ratio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contenedor .footer {
+    grid-area: footer;
+    background-color: #7164b4;
+    text-align: center;
+    padding: 10px;
+}
